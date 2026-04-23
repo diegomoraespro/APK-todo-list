@@ -1,0 +1,20 @@
+# Ignorar tudo na raiz
+/*
+
+# Não ignorar a pasta build (permitir que o git entre nela)
+!/build/
+
+# Mas ignorar tudo dentro de build
+/build/*
+
+# Exceto o caminho específico até o APK
+!/build/app/
+/build/app/*
+!/build/app/outputs/
+/build/app/outputs/*
+!/build/app/outputs/flutter-apk/
+/build/app/outputs/flutter-apk/*
+!/build/app/outputs/flutter-apk/app-release.apk
+
+# Não ignorar o próprio arquivo .gitignore
+!.gitignore
